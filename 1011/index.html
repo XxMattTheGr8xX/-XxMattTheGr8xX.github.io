@@ -10,11 +10,11 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: flex-end;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
         #webdiv {
-            background-color: antiquewhite;
+            
             width: 1000px;
             height: 100px;
             margin-left: auto;
@@ -26,55 +26,110 @@
             height: 120px;
             margin-left: 10px;
             margin-top: 10px;
-            background-color:dodgerblue;
+            
         }
-        #footerdiv
-        {
-            background-color:aliceblue;
-            height:50px;
-            width:1000px;
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-           align-items:center;
-            margin-left:auto;
-            margin-right:auto;
-            border-radius:10px;
-            color:darkgrey;
-        }
-        #bodydiv
-        {
-            background-color:lightcoral;
-            display:flex;
-            flex-direction:row;
 
+        #footerdiv {
+            background-color: aliceblue;
+            height: 50px;
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            color: darkgrey;
         }
-        #leftdiv
-        {
-            background-color:blueviolet;
+
+        #bodydiv {
+            
+            display: flex;
+            flex-direction: row;
         }
-        #rightdiv
+
+        #leftdiv {
+            
+            display: flex;
+            flex-direction: column;
+        }
+
+        #rightdiv {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: darkgray;
+        }
+
+        #updiv {
+            width: 480px;
+            
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #downdiv 
         {
-            background-color:aquamarine;
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            border-radius:20px;
-            border-width:2px;
+            width: 480px;
+            
             border-style:solid;
+            border-width:2px;
             border-color:darkgray;
+            border-radius:10px;
+        }
+
+        #title1 {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightblue;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
     <div id="webdiv">
-        web page
-       
+        <div id="headerdiv" style="display:flex; flex-direction:row; justify-content:center; align-items:center;">
+            <div style="font-size:30px; color:dodgerblue; text-transform:uppercase; font-weight:bold;">
+                I love Programming!
+            </div>
+            <div>
+                <img src="a.svg" style="height:100px;"/>
+            </div>
+        </div>
+
         <div id="bodydiv">
-            
+
             <div id="leftdiv">
-                left
+                <div id="updiv">
+                    <span id="title1">
+                        What I already learned:
+                    </span>
+                    <ul>
+                        <li>C#</li>
+                        <li>C# entity framework</li>
+                        <li>Database Sqllite</li>
+                        <li>html & CSS</li>
+
+                    </ul>
+                </div>
+                <div id="downdiv">
+                    <span id="title2" style="font-size:20px; font-weight:bold;">What im going to learn next: </span>
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>BootStrap</li>
+                        <li>Asp.net MVC</li>
+                        <li>Wev REST API</li>
+
+                    </ol>
+                </div>
             </div>
             <div id="rightdiv">
                 <div style="color:dodgerblue; font-size:20pt; font-weight:bold;">
@@ -95,10 +150,6 @@
     </div>
 
 
-    <div id="maindiv">
-        <div class="d1">div1</div>
-        <div class="d1">div2</div>
-        <div class="d1">div3</div>
-    </div>
+    
 </body>
 </html>
